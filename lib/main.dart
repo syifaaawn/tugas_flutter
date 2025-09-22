@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_flutter/latihan/latihan_layout.dart';
-import 'package:latihan_flutter/tugas/tugas_layout.dart';
+import 'package:latihan_flutter/tugas/tugas_layout2.dart';
 
 
 void main(List<String> args) {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
     Widget build(BuildContext context) {
       return MaterialApp(
-        home: TugasLayout(),
+        home: TugasLayout2(),
       );
     }
   }
