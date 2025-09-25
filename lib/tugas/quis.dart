@@ -9,6 +9,7 @@ class Quis extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(50),
         child: Column(
+          
            crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
@@ -26,18 +27,30 @@ class Quis extends StatelessWidget {
               Text("Details>", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.blue),),
             ],
           ),
-          Row(
-            children: [
+          SizedBox(height: 15),
               Container(
-                padding: EdgeInsets.all(20),
+                width: double.infinity,
                 height: 200,
-                width:625,
+                padding: EdgeInsets.only(left: 30, top: 20),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                  gradient: LinearGradient(colors: [const Color.fromARGB(255, 223, 61, 251), const Color.fromARGB(255, 239, 227, 241)])
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(25), topRight: Radius.circular(120),bottomLeft: Radius.circular(25),bottomRight: Radius.circular(25)),
+                  gradient: LinearGradient(colors: [const Color.fromARGB(255, 182, 50, 205), const Color.fromARGB(255, 239, 227, 241)])
                 ),
-              )],
-          )
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Next Workout", style: TextStyle( fontSize: 15, color: Colors.white),),
+                    Text("Lets Toning", style: TextStyle( fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),),
+                    Text("and Glutes Workout", style: TextStyle( fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                  ],
+                ) ,
+              ),
+        Container(
+          child: Stack(
+            
+          ),
+        
+        )
         ],
           
         ),
