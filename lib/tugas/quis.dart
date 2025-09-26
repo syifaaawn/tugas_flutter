@@ -78,18 +78,33 @@ class Quis extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 15),
-        Container(
+              SizedBox(height: 41),
+        Stack(
+          clipBehavior: Clip.none,
+        children: [
+           Container(
           width: double.infinity,
           height: 150,
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
           image: DecorationImage(image: AssetImage("gambar/gambar7.jpg"),
           fit: BoxFit.cover)),
-          child: Stack(
-          ),
-        
-        )
+        ),
+        Positioned(
+          left:  20,
+          top: -30,
+          child: Image.asset("gambar/gambar6.png")),
+          Positioned(
+            right: 0,
+            left: 100,
+            top: 20,
+            child: Text("You are doing great", textAlign: TextAlign.center, style: TextStyle( color: Colors.blue, fontSize: 22,
+          fontWeight: FontWeight.bold
+
+          ),))
         ],
+        ),
+        ],
+      
           
         ),
       ),
