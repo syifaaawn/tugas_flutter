@@ -41,20 +41,33 @@ class Quis extends StatelessWidget {
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(25), topRight: Radius.circular(120),bottomLeft: Radius.circular(25),bottomRight: Radius.circular(25)),
                   gradient: LinearGradient(colors: [const Color.fromARGB(255, 162, 42, 183), const Color.fromARGB(255, 239, 227, 241)])
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Next Workout", style: TextStyle( fontSize: 15, color: Colors.white),),
-                    Text("Lets Toning", style: TextStyle( fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),),
-                    Text("and Glutes Workout", style: TextStyle( fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),),
-                    SizedBox(height: 35),
-                    Row(
-                      children: [
-                        Icon(Icons.timer, color: Colors.white,),
-                        SizedBox(width:7),
-                        Text("60 min", style: TextStyle( fontSize:17,color:  Colors.white),)
-                      ],
-                    ),
+                child: Stack(
+                  children:[ Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Next Workout", style: TextStyle( fontSize: 15, color: Colors.white),),
+                      Text("Lets Toning", style: TextStyle( fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),),
+                      Text("and Glutes Workout", style: TextStyle( fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),),
+                      SizedBox(height: 35),
+                      Row(
+                        children: [
+                          Icon(Icons.timer, color: Colors.white,),
+                          SizedBox(width:7),
+                          Text("60 min", style: TextStyle( fontSize:17,color:  Colors.white),),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.all(Radius.circular(35)),
+                            ),
+                            child: Icon(Icons.play_arrow, color: const Color.fromARGB(255, 188, 39, 208), size: 25),
+                          )
+                        ],
+
+                      ),
+                    ],
+                  ),
                   ],
                 ),
               ),
