@@ -29,7 +29,12 @@ class Quis extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text("Your Program", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-              Text("Details >", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.blue),),
+              Row(
+                children: [
+                  Text("Details", style: TextStyle( fontSize: 15, fontWeight: FontWeight.bold, color: Colors.blue ),),
+                  Icon(Icons.chevron_right, color: Colors.blue,)
+                ],
+              )
             ],
           ),
           SizedBox(height: 15),
@@ -54,20 +59,22 @@ class Quis extends StatelessWidget {
                           Icon(Icons.timer, color: Colors.white,),
                           SizedBox(width:7),
                           Text("60 min", style: TextStyle( fontSize:17,color:  Colors.white),),
-                          Container(
-                            width: 40,
-                            height: 40,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.all(Radius.circular(35)),
-                            ),
-                            child: Icon(Icons.play_arrow, color: const Color.fromARGB(255, 188, 39, 208), size: 25),
-                          )
                         ],
-
                       ),
                     ],
                   ),
+                   Positioned(
+                        right: 40,
+                        bottom: 20,
+                        child: Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.all(Radius.circular(35)),
+                        ),
+                        child: Icon(Icons.play_arrow, color: Colors.purple, size: 25),
+                      )),
                   ],
                 ),
               ),
