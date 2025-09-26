@@ -78,9 +78,14 @@ class Quis extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(height: 15),
         Container(
+          width: double.infinity,
+          height: 150,
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
+          image: DecorationImage(image: AssetImage("gambar/gambar7.jpg"),
+          fit: BoxFit.cover)),
           child: Stack(
-            
           ),
         
         )
