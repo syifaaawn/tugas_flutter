@@ -40,7 +40,7 @@ class Quis extends StatelessWidget {
           SizedBox(height: 13),
               Container(
                 width: double.infinity,
-                height: 200,
+                height: 190,
                 padding: EdgeInsets.only(left: 30, top: 20),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(25), topRight: Radius.circular(120),bottomLeft: Radius.circular(25),bottomRight: Radius.circular(25)),
@@ -95,7 +95,7 @@ class Quis extends StatelessWidget {
           child: Image.asset("gambar/gambar6.png")),
           Positioned(
             right: 0,
-            left: 280,
+            left: 250,
             top: 30,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -118,21 +118,23 @@ class Quis extends StatelessWidget {
               children: [
                 Expanded(
                   child: Container(
-                    height: 115,
+                    height: 123,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
                       color: Colors.white,
                     ),
+                    child: Image.asset("gambar/gambar4.png", fit: BoxFit.contain, width: 80),
                   ),
                 ),
                 SizedBox(width: 25),
                 Expanded(
                   child: Container(
-                    height: 115,
+                    height: 123,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
                       color: Colors.white
                     ),
+                    child: Image.asset("gambar/gambar5.png", fit: BoxFit.contain, width: 80),
                   ),
                 )
               ],
