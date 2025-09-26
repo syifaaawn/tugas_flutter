@@ -37,7 +37,7 @@ class Quis extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(height: 15),
+          SizedBox(height: 13),
               Container(
                 width: double.infinity,
                 height: 200,
@@ -78,7 +78,7 @@ class Quis extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 41),
+              SizedBox(height: 35),
         Stack(
           clipBehavior: Clip.none,
         children: [
@@ -108,30 +108,33 @@ class Quis extends StatelessWidget {
             ),
         ],
         ),
-        SizedBox(height: 15),
+        SizedBox(height: 10),
         Text("Area of Focus", style: TextStyle( fontSize: 20, fontWeight: FontWeight.bold),),
-        SizedBox(height: 5),
+        SizedBox(height: 8),
         Column(
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Expanded(child: Container(
-                  height: 100,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(25),
-                    color: Colors.white
+                Expanded(
+                  child: Container(
+                    height: 115,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: Colors.white,
+                    ),
                   ),
-                ),),
-                Expanded(child: 
-                Container(
-                  height: 100,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(25),
-                    color: Colors.white
+                ),
+                SizedBox(width: 25),
+                Expanded(
+                  child: Container(
+                    height: 115,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: Colors.white
+                    ),
                   ),
-                ))
-
+                )
               ],
               
             ),
