@@ -9,17 +9,22 @@ class Quis extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(50),
         child: Column(
-          
            crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text("Training",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold )),
-              Icon(Icons.calendar_month),
-            ],
+            Row(
+              children: [
+                Icon(Icons.chevron_left),
+                Icon(Icons.calendar_month),
+                Icon(Icons.chevron_right)
+              ],
+            ),
+            ], 
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 15),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
