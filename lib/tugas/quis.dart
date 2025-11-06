@@ -107,7 +107,7 @@ class Quis extends StatelessWidget {
             ), 
             ),
         ],
-        ),
+        ), 
         SizedBox(height: 10),
         Text("Area of Focus", style: TextStyle( fontSize: 20, fontWeight: FontWeight.bold),),
         SizedBox(height: 8),
@@ -122,7 +122,7 @@ class Quis extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
                       color: Colors.white,
-                    ),
+                    ),  
                     child: Image.asset("gambar/gambar4.png", fit: BoxFit.contain, width: 80),
                   ),
                 ),
