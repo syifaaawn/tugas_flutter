@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class Produk {
   // 1. definisikan variable yang dibuatuhkan
   // 2. set ke final supaya dapat dirubah setelah dibuat
@@ -20,15 +22,30 @@ class Produk {
 
   // baut method untuk import dari json
   // buat method dengan keyword factory
-  factory Produk.dariJson(Map<String, dynamic> json) {
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'title': title,
+      'description': description,
+      'price': price,
+      'category': category,
+      'image': image,
+    };
+  }
+
+  factory Produk.fromMap(Map<String, dynamic> map) {
     return Produk(
-      id: json["id"],
-      title: json["title"],
-      description: json["description"],
-      price: json["price"],
-      category: json["category"],
-      image: json["image"],
+      id: map['id']?.toInt() ?? 0,
+      title: map['title'] ?? '',
+      description: map['description'] ?? '',
+      price: map['price']?.toDouble() ?? 0.0,
+      category: map['category'] ?? '',
+      image: map['image'] ?? '',
     );
   }
-  
+
+  @override
+  String toString() {
+    return 'Produk(id: $id, title: $title, description: $description, price: $price, category: $category, image: $image)';
+  }
 }
